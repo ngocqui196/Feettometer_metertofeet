@@ -7,20 +7,22 @@
 <body>
 <p>
     <lable>Feet converter meters</lable>
-    <input id="conVerTer" type="number" oninput="MeasureConverter(this.value)" onchange="MeasureConverter(this.value)">
-    <input id="con" type="number" oninput="MeasureConverter(this.value)" onchange="MeasureConverter(this.value)">
-
+    <input id="conVerTer" type="number" oninput="MeasureConverter(this.value)" onchange="MeasureConverter(this.value)"><br>
+    <p>Meter: <span id="outmeter"></span></p>
+    <lable> Meters converter feet</lable>
+    <input id="con" type="number" oninput="Measu(this.value)" onchange="Measu(this.value)">
+    <p>Feet: <span  id="outfeet"></span></p>
 </p>
-<p>Celcius: <span id="outmeter"></span></p>
-<p>Celcius: <span  id="keep"></span></p>
+
+
 <script>
 function MeasureConverter(feet,) {
     feet = parseInt(feet);
-    document.getElementById("outmeter").innerHTML =  * 0.305;
+    document.getElementById("outmeter").innerHTML = feet * 0.305;
 }
-function MeasureConverter(meter) {
+function Measu(meter) {
     meter = parseInt(meter);
-    document.getElementById("keep").innerHTML = meter * 0.305;
+    document.getElementById("outfeet").innerHTML = meter * 3.2808;
 }
 </script>
 </body>
