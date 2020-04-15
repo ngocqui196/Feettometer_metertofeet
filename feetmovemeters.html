@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet sang meter</title>
+</head>
+<body>
+<p>
+    <lable>Feet converter meters</lable>
+    <input id="conVerTer" type="number" oninput="MeasureConverter(this.value)" onchange="MeasureConverter(this.value)">
+    <input id="con" type="number" oninput="MeasureConverter(this.value)" onchange="MeasureConverter(this.value)">
+
+</p>
+<p>Celcius: <span id="outmeter"></span></p>
+<p>Celcius: <span  id="keep"></span></p>
+<script>
+function MeasureConverter(feet,) {
+    feet = parseInt(feet);
+    document.getElementById("outmeter").innerHTML =  * 0.305;
+}
+function MeasureConverter(meter) {
+    meter = parseInt(meter);
+    document.getElementById("keep").innerHTML = meter * 0.305;
+}
+</script>
+</body>
+</html>
