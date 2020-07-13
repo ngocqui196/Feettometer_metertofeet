@@ -17,12 +17,12 @@
 
 <script>
 function MeasureConverter(foot) {
-    foot = parseInt(foot);
-    document.getElementById("outmeter").innerHTML = foot * 0.305;
+    foot = parseFloat(foot);
+    document.getElementById("outmeter").innerHTML = parseFloat(foot * 0.305);
 }
 function Measu(meter) {
-    meter = parseInt(meter);
-    document.getElementById("outfeet").innerHTML = meter * 3.2808;
+    meter = parseFloat(meter);
+    document.getElementById("outfeet").innerHTML = parseFloat(meter * 3.279);
 }
 </script>
 </body>
